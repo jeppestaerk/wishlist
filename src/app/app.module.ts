@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { WishComponent } from './wish/wish.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -11,8 +10,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     WishComponent
   ],
   imports: [
-    BrowserModule,
-    BrowserAnimationsModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]

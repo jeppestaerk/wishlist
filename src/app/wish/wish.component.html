@@ -1,6 +1,7 @@
 <div class="row">
-  <div class="col-sm-6 col-md-4" *ngFor="let wish of wishes">
-    <div class="thumbnail" [@flyIn]="'in'">
+  <div class="col-sm-6 col-md-4"
+       *ngFor="let wish of wishes">
+    <div class="thumbnail">
       <img width="400" height="300" [src]='wish.image' [alt]='wish.body'>
       <div class="caption">
         <h3>{{wish.title}}</h3>

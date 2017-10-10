@@ -1,6 +1,4 @@
-import { Component } from '@angular/core';
-import {animate, state, style, transition, trigger} from '@angular/animations';
-
+import { Component, OnInit } from '@angular/core';
 
 export class Wish {
   title: string;
@@ -51,16 +49,7 @@ const WISHES: Wish[] = [
 @Component({
   selector: 'app-wish',
   templateUrl: './wish.component.html',
-  styleUrls: ['./wish.component.css'],
-  animations: [
-    trigger('flyIn', [
-      state('in', style({transform: 'translateY(0%)'})),
-      transition('void => *', [
-        style({transform: 'translateY(240%)'}),
-        animate('500ms 500ms ease-in-out')
-      ])
-    ])
-  ]
+  styleUrls: ['./wish.component.css']
 })
 export class WishComponent {
   wishes = WISHES;
